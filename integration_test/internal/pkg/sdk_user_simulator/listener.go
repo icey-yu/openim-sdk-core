@@ -242,8 +242,6 @@ func (t *testConnListener) OnConnecting() {
 }
 
 func (t *testConnListener) OnConnectSuccess() {
-
-	log.ZInfo(context.TODO(), "login!!!!")
 	vars.NowLoginNum.Add(1)
 }
 
